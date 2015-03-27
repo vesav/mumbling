@@ -46,8 +46,8 @@ else
 	OPTIONS="Kyllä En"
         select opt in $OPTIONS; do
         	
-        	# Poistutaan ilman muutoksia
-		if [ "$opt" = "En" ]; then
+               # Poistutaan ilman muutoksia
+	       if [ "$opt" = "En" ]; then
                 echo "Järjestelmään ei tehty muutoksia."
                 exit
                
