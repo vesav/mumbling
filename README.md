@@ -1,6 +1,6 @@
 # mumbling
 
-Asenna Mumble ja konfiguroi ufw automaattisesti Bash-skriptin avulla.
+Asenna Mumble ja konfiguroi ufw Bash-skriptin avulla.
 
 </br>
 
