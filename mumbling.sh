@@ -25,7 +25,7 @@ if [ ! -f /etc/mumble-server.ini ]; then
 	# Muokataan mumble-server.ini-tiedostoa ja uudelleenkäynnistetään Mumble-server
 	echo "Vaihdetaan salasana ja tiedot"
 	sed -i -e 's/serverpassword=/serverpassword='$salasana'/g' /etc/mumble-server.ini
-	sed -i -e 's/uname=mumble-server/uname='$palvelin'/g' /etc/mumble-server.ini
+	sed -i -e 's/#registerName=Mumble Server/registerName='$palvelin'/g' /etc/mumble-server.ini
 	sed -i -e 's/Welcome to this server running/Tervetuloa! Suojatun keskustelun tarjoaa/g' /etc/mumble-server.ini
 	sed -i -e 's/Enjoy your stay!/Nauti salaisista keskusteluista!/g' /etc/mumble-server.ini
 	service mumble-server restart
