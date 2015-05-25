@@ -56,6 +56,7 @@ else
         	apt-get remove mumble-server -y
 		rm /etc/mumble-server.ini
 		apt-get autoremove -y
+		ufw delete allow 64738
 		echo "Mumble poistettiin onnistuneesti."
                 exit
                
