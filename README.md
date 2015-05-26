@@ -1,6 +1,6 @@
 # mumbling
 
-Asenna Mumble ja konfiguroi ufw Bash-skriptin avulla. Palomuurista sallitaan vain SSH ja Mumble-palvelimen portti.
+Asenna Mumble ja konfiguroi ufw Bash-skriptin avulla. Palomuurista sallitaan vain SSH ja Mumble-palvelimen portti. Samalla skriptillä onnistuu poistaminenkin.
 
 </br>
 
