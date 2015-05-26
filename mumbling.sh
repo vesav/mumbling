@@ -1,6 +1,7 @@
 #!/bin/bash
 # Tämä skripti asentaa Mumble-palvelimen Ubuntuun
 # Tämän lisäksi palomuuri konfiguroidaan sallimaan vain Mumble ja SSH.
+# SuperUser-salasana tulee antaa erikseen
 
 # Asennetaan Mumble, jos entistä asetustiedostoa ei löydy
 if [ ! -f /etc/mumble-server.ini ]; then
@@ -26,7 +27,7 @@ if [ ! -f /etc/mumble-server.ini ]; then
 	echo "Vaihdetaan salasana ja tiedot"
 	sed -i -e 's/serverpassword=/serverpassword='$salasana'/g' /etc/mumble-server.ini
 	sed -i -e 's/#registerName=Mumble Server/registerName='$palvelin'/g' /etc/mumble-server.ini
-	sed -i -e 's/Welcome to this server running/Tervetuloa! Suojatun keskustelun tarjoaa/g' /etc/mumble-server.ini
+	sed -i -e 's/Welcome to this server running <b>Murmur</b>/Tervetuloa! Suojatun keskustelun tarjoaa <b>'$palvelin'</b>/g' /etc/mumble-server.ini
 	sed -i -e 's/Enjoy your stay!/Nauti salaisista keskusteluista!/g' /etc/mumble-server.ini
 	service mumble-server restart
 
@@ -54,10 +55,10 @@ else
                # Poistetaan Mumble-server ja sen tarvitsemat paketit
                elif [ "$opt" = "Kyllä" ]; then
         	apt-get remove mumble-server -y
-		rm /etc/mumble-server.ini
+		# rm /etc/mumble-server.ini
 		apt-get autoremove -y
 		ufw delete allow 64738
-		echo "Mumble poistettiin onnistuneesti."
+		echo "Mumble poistettiin onnistuneesti. UFW on edelleen päällä ja vain ssh on sallittuna. Halutessasi poista mumblen asetustiedosto: rm /etc/mumble-server.ini"
                 exit
                
                # Ilmoitetaan virheellisestä valinnasta
