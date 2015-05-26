@@ -20,4 +20,4 @@ Suorita skripti:
 </br>
 
 Mumble-palvelin on nyt käyttövalmis. Asenna <a href="http://sourceforge.net/projects/mumble/" target="_blank">Mumble</a>-sovellus ja anna ohjelmalle palvelimesi IP-osoite, käyttäjänimeksi keksimäsi nimi ja salasanaksi skriptin yhteydessä antamasi salasana. Tarvittaessa konfiguroi asetuksia tarkemmin:
-##### /etc/mumble-server.ini
+##### nano /etc/mumble-server.ini
