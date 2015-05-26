@@ -1,13 +1,18 @@
 # mumbling
 
-Asenna Mumble ja konfiguroi ufw Bash-skriptin avulla.
+Asenna Mumble ja konfiguroi ufw Bash-skriptin avulla. Palomuurista sallitaan vain SSH ja Mumble-palvelimen portti.
 
 </br>
 
-Tarvittaessa anna suoritusoikeudet:
+Kirjaudu Roottina ja anna suoritusoikeudet:
 ##### chmod 755 mumbling.sh
 
 </br>
 
 Suorita skripti:
 ##### ./mumbling.sh
+
+</br>
+
+Konfiguroi asetuksia tarkemmin:
+##### /etc/mumble-server.ini
