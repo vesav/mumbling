@@ -19,5 +19,5 @@ Suorita skripti:
 
 </br>
 
-Konfiguroi asetuksia tarkemmin:
+Tarvittaessa konfiguroi asetuksia tarkemmin:
 ##### /etc/mumble-server.ini
