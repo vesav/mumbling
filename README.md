@@ -1,6 +1,6 @@
 # mumbling
 
-Asenna Mumble ja konfiguroi ufw Bash-skriptin avulla. Palomuurista sallitaan vain SSH ja Mumble-palvelimen portti. Samalla skriptillä onnistuu poistaminenkin.
+Asenna Mumble Ubuntuun ja konfiguroi ufw Bash-skriptin avulla. Palomuurista sallitaan vain SSH ja Mumble-palvelimen portti. Samalla skriptillä onnistuu poistaminenkin.
 
 </br>
 
@@ -19,5 +19,5 @@ Suorita skripti:
 
 </br>
 
-Tarvittaessa konfiguroi asetuksia tarkemmin:
+Mumble-palvelin on nyt käyttövalmis. Kirjaudu sisään Mumble-sovelluksella antamalla palvelimesi IP-osoite, käyttäjänimeksi keksimäsi nimi ja salasanaksi skriptin yhteydessä antamasi salasana. Tarvittaessa konfiguroi asetuksia tarkemmin:
 ##### /etc/mumble-server.ini
