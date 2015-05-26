@@ -4,7 +4,7 @@ Asenna Mumble ja konfiguroi ufw Bash-skriptin avulla. Palomuurista sallitaan vai
 
 </br>
 
-Kirjaudu Roottina ja anna suoritusoikeudet:
+Kirjaudu roottina ja anna suoritusoikeudet:
 ##### chmod 755 mumbling.sh
 
 </br>
