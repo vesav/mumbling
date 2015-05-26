@@ -5,7 +5,7 @@ Asenna Mumble ja konfiguroi ufw Bash-skriptin avulla. Palomuurista sallitaan vai
 </br>
 
 Kirjaudu roottina ja lataa mumbling.sh:
-wget https://raw.githubusercontent.com/vesav/mumbling/master/mumbling.sh
+##### wget https://raw.githubusercontent.com/vesav/mumbling/master/mumbling.sh
 
 </br>
 
